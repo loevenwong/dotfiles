@@ -33,21 +33,21 @@ docker_compose_exec() {
 
 alias without_comments='cat $1 | egrep -v "(^#.*|^$)"'
 alias killaudio="sudo kill -9 `ps ax|grep 'coreaudio[a-z]' |awk '{print $1}'`"
-alias subl='open -a "Sublime Text"'
-alias hosts="sudo subl /etc/hosts"
+alias tw='open -a "TextWrangler"'
+alias hosts="sudo tw /etc/hosts"
 
 alias rename_files_to_md5="/usr/local/bin/md5sum * | gsed -e 's/\([^ ]*\) \(.*\(\..*\)\)$/mv -v \2 \1\3/e'"
 alias install_roles="ansible-galaxy install -r requirements.yml -p ./roles -i"
 
 # Helper
 alias Code="cd ~/Code"
-alias dotfiles="subl ~/.dotfiles/"
-alias aliases="subl ~/.dotfiles/shell/aliases.sh"
+alias dotfiles="tw ~/.dotfiles/"
+alias aliases="tw ~/.dotfiles/shell/aliases.sh"
 alias refresh="fresh && source ~/.zshrc && reset"
-alias zshrc="subl ~/.dotfiles/zshrc"
-alias freshrc="subl ~/.dotfiles/freshrc"
-alias known_hosts="subl ~/.ssh/known_hosts"
-alias ssh_config="subl ~/.ssh/config"
+alias zshrc="tw ~/.dotfiles/zshrc"
+alias freshrc="tw ~/.dotfiles/freshrc"
+alias known_hosts="tw ~/.ssh/known_hosts"
+alias ssh_config="tw ~/.ssh/config"
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ~="cd ~" # `cd` is probably faster to type though

@@ -31,7 +31,7 @@ brew 'cmake'
 brew 'ansible'
 
 # bin
-brew 'node'
+#brew 'node'
 
 
 # casks
@@ -53,17 +53,18 @@ cask 'renamer'
 cask 'sequel-pro'
 cask 'skype'
 cask 'slack'
-cask 'spotify'
-cask 'sublime-text3'
+#cask 'spotify'
+#cask 'sublime-text3'
 cask 'textwrangler'
 cask 'virtualbox'
 cask 'vagrant'
 cask 'vlc'
 cask 'dockertoolbox'
 cask 'java'
-cask 'slack'
+cask 'Caskroom/cask/postman'
 # tunnelblick
 # vmware-fusion pro
+cask 'caskroom/cask/thunderbird'
 
 # install quicklook plugins
 cask 'qlcolorcode'
