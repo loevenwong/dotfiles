@@ -31,10 +31,4 @@ $ fresh install
 ```
 
 manualy install:
-- Photoshop 5.5
-- HMA! Pro VPN
-- SnapNDrag Pro
-- readkit
-- screenium
-- wunderlist
 - themes: https://github.com/altercation/solarized
