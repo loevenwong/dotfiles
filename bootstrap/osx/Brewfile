@@ -65,6 +65,8 @@ cask 'Caskroom/cask/postman'
 # tunnelblick
 # vmware-fusion pro
 cask 'caskroom/cask/thunderbird'
+cask 'Caskroom/cask/remote-desktop-manager'
+cask 'alfred'
 
 # install quicklook plugins
 cask 'qlcolorcode'
