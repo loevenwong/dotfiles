@@ -136,3 +136,7 @@ source ~/.fresh/build/shell.sh
 if which rbenv > /dev/null; then
 	eval "$(rbenv init -)";
 fi
+
+
+# user settings...
+CASE_SENSITIVE="true"

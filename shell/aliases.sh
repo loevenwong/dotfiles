@@ -2,16 +2,16 @@
 # heavily stolen from mathiasbynens/dotfiles
 
 alias history="fc -l 1"
-alias internet\?="ping -c3 8.8.8.8"
-alias ip='curl curlmyip.com'
-alias ll="ls -alG"
-alias cls="clear"
-alias ..='cd ..'
-alias ...='cd ../../'
-alias ....='cd ../../../'
-alias .....='cd ../../../../'
-alias .4='cd ../../../../'
-alias .5='cd ../../../../..'
+#alias internet\?="ping -c3 8.8.8.8"
+#alias ip='curl curlmyip.com'
+#alias ll="ls -alG"
+#alias cls="clear"
+#alias ..='cd ..'
+#alias ...='cd ../../'
+#alias ....='cd ../../../'
+#alias .....='cd ../../../../'
+#alias .4='cd ../../../../'
+#alias .5='cd ../../../../..'
 alias cd..='cd ..'
 
 alias docker_boot='/Applications/Docker/Docker\ Quickstart\ Terminal.app/Contents/Resources/Scripts/start.sh && eval $(docker-machine env default)'
@@ -163,3 +163,9 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
+
+alias cssh_sa="csshX sa-studio sa-app-01 sa-app-02 sa-app-03 sa-app-04 sa-app-05 sa-app-06 sa-app-07"
+alias cssh_stoffe="csshX stoffe1 stoffe2 stoffe3 stoffe4 stoffe5"
+alias cssh_eav="csshX eav1 eav2 eav3 eav4"
+
+

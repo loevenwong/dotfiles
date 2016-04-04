@@ -67,6 +67,7 @@ cask 'Caskroom/cask/postman'
 cask 'caskroom/cask/thunderbird'
 cask 'Caskroom/cask/remote-desktop-manager'
 cask 'alfred'
+#cask 'csshx' manual installed...
 
 # install quicklook plugins
 cask 'qlcolorcode'
