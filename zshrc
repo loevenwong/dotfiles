@@ -140,3 +140,4 @@ fi
 
 # user settings...
 CASE_SENSITIVE="true"
+zstyle ':completion:*' special-dirs true
