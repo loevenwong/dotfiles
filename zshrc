@@ -141,3 +141,4 @@ fi
 # user settings...
 CASE_SENSITIVE="true"
 zstyle ':completion:*' special-dirs true
+zstyle ':completion:*' matcher-list 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
