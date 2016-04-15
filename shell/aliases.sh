@@ -166,6 +166,7 @@ alias reload="exec $SHELL -l"
 
 alias cssh_sa="csshX sa-studio sa-app-01 sa-app-02 sa-app-03 sa-app-04 sa-app-05 sa-app-06 sa-app-07"
 alias cssh_stoffe="csshX stoffe1 stoffe2 stoffe3 stoffe4 stoffe5"
+alias cssh_sa_es="csshX sa-es-01 sa-es-02 sa-es-03"
 alias cssh_eav="csshX eav1 eav2 eav3 eav4"
 
 
