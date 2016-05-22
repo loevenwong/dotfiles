@@ -11,6 +11,8 @@ export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 # use home .bin folder
 export PATH="/Users/t.loevenich/.bin:$PATH"
 
+# other path settings...
+export PATH=$PATH:/Users/t.loevenich/private/dev/android-sdk-macosx/platform-tools
 export POWERLEVEL9K_MODE='awesome-patched'
 
 #docker_env

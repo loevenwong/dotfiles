@@ -15,6 +15,7 @@ brew 'unrar'
 brew 'watch'
 brew 'wget'
 brew 'md5sha1sum'
+brew 'gawk'
 
 # ruby
 brew 'rbenv'
@@ -27,8 +28,9 @@ brew 'coreutils'
 #brew 'diffutils'
 brew 'cmake'
 
-# ansible
+
 brew 'ansible'
+brew 'maven'
 
 # bin
 #brew 'node'
