@@ -170,3 +170,7 @@ alias cssh_sa_es="csshX sa-es-01 sa-es-02 sa-es-03"
 alias cssh_eav="csshX eav1 eav2 eav3 eav4"
 
 
+alias mvn-tkl="rm -f /Users/t.loevenich/.m2 && ln -s /Users/t.loevenich/private/m2 .m2"
+alias mvn-xsite="rm -f /Users/t.loevenich/.m2 && ln -s /Users/t.loevenich/xsite/.m2 .m2"
+
+
