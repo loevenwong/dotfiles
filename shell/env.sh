@@ -1,4 +1,4 @@
-export EDITOR="tw"
+export EDITOR="subl"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export HIST_STAMPS="dd.mm.yy"
 export DEFAULT_USER=t.loevenich

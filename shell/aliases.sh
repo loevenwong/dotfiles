@@ -19,8 +19,9 @@ alias docker_env='eval $(docker-machine env default)'
 alias docker_stop_all='docker stop $(docker ps -a -q)'
 alias docker_remove_all='docker stop $(docker ps -a -q)'
 alias docker_clean='docker_stop_all && docker_remove_all && docker rm `docker ps -aq --no-trunc --filter "status=exited"` && docker rmi `docker images --filter 'dangling=true' -q --no-trunc`'
-alias debian_latest='docker run -it --rm=true debian bash'
-alias ubuntu_latest='docker run -it --rm=true ubuntu bash'
+alias docker_debian_latest='docker run -it --rm=true debian bash'
+alias docker_ubuntu_latest='docker run -it --rm=true ubuntu bash'
+alias docker_mailcatcher_latest='echo "starting mailcatcher with port 1080 and 1025" && docker run -d -p 1080:80 -p 1025:25 --name mail tophfr/mailcatcher'
 
 # Allows you to use docker-compose-exec {service} {command} to run a command on the service
 docker_compose_exec() {
@@ -33,21 +34,19 @@ docker_compose_exec() {
 
 alias without_comments='cat $1 | egrep -v "(^#.*|^$)"'
 alias killaudio="sudo kill -9 `ps ax|grep 'coreaudio[a-z]' |awk '{print $1}'`"
-alias tw='open -a "TextWrangler"'
-alias hosts="sudo tw /etc/hosts"
+alias hosts="sudo subl /etc/hosts"
 
 alias rename_files_to_md5="/usr/local/bin/md5sum * | gsed -e 's/\([^ ]*\) \(.*\(\..*\)\)$/mv -v \2 \1\3/e'"
 alias install_roles="ansible-galaxy install -r requirements.yml -p ./roles -i"
 
 # Helper
-alias Code="cd ~/Code"
-alias dotfiles="tw ~/.dotfiles/"
-alias aliases="tw ~/.dotfiles/shell/aliases.sh"
+alias dotfiles="subl ~/.dotfiles/"
+alias aliases="subl ~/.dotfiles/shell/aliases.sh"
 alias refresh="fresh && source ~/.zshrc && reset"
-alias zshrc="tw ~/.dotfiles/zshrc"
-alias freshrc="tw ~/.dotfiles/freshrc"
-alias known_hosts="tw ~/.ssh/known_hosts"
-alias ssh_config="tw ~/.ssh/config"
+alias zshrc="subl ~/.dotfiles/zshrc"
+alias freshrc="subl ~/.dotfiles/freshrc"
+alias known_hosts="subl ~/.ssh/known_hosts"
+alias ssh_config="subl ~/.ssh/config"
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ~="cd ~" # `cd` is probably faster to type though
@@ -167,10 +166,8 @@ alias reload="exec $SHELL -l"
 alias cssh_sa="csshX sa-studio sa-app-01 sa-app-02 sa-app-03 sa-app-04 sa-app-05 sa-app-06 sa-app-07"
 alias cssh_stoffe="csshX stoffe1 stoffe2 stoffe3 stoffe4 stoffe5"
 alias cssh_sa_es="csshX sa-es-01 sa-es-02 sa-es-03"
-alias cssh_eav="csshX eav1 eav2 eav3 eav4"
+alias cssh_eav="csshX eav-1 eav-2 eav-3 eav-4"
 
 
-alias mvn-tkl="rm -f /Users/t.loevenich/.m2 && ln -s /Users/t.loevenich/private/m2 .m2"
-alias mvn-xsite="rm -f /Users/t.loevenich/.m2 && ln -s /Users/t.loevenich/xsite/.m2 .m2"
-
-
+alias private="rm -f /Users/t.loevenich/.m2 && ln -s /Users/t.loevenich/private/m2 /Users/t.loevenich/.m2 && rm -f ~/.gitconfig && ln -s /Users/t.loevenich/.fresh/private/gitconfig /Users/t.loevenich/.gitconfig"
+alias xsite="rm -f /Users/t.loevenich/.m2 && ln -s /Users/t.loevenich/xsite/.m2 /Users/t.loevenich/.m2 && rm -f ~/.gitconfig && ln -s /Users/t.loevenich/.fresh/work/gitconfig /Users/t.loevenich/.gitconfig"

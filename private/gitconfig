@@ -1,0 +1,32 @@
+[user]
+    email = tloevenich@tkl-soft.de
+    name = Timo Lövenich
+[push]
+       default = simple
+
+[alias]
+       unmerged = !git branch -r --no-merged | grep -v HEAD | xargs -L1 git --no-pager log --pretty=tformat:'%Cgreen%d%Creset | %h | %an | %Cblue%ar%Creset' -1 | column -t -s '|'
+       merged = !git branch -r --merged | grep -v HEAD | xargs -L1 git --no-pager log --pretty=tformat:'%Cgreen%d%Creset | %h | %an | %Cblue%ar%Creset' -1 | column -t -s '|'
+       st = status -sb         # smarter status - include tag and branch info
+       fup = log --since '1 day ago' --oneline --author tloevenich@tkl-soft.de  # I know what you did yesterday - great for follow-ups
+       ls = log --pretty=tformat:'%C(yellow)%h %C(blue)%ad%C(red)%d %C(reset)%s%C(green) [%cn]' --decorate --date=short  # pretty one-line log with tags, branches and authors
+       lsv = log --pretty=tformat:'%C(yellow)%h %C(blue)%ad%C(red)%d %C(reset)%s%C(green) [%cn]' --decorate --date=short --numstat    # a verbose ls, shows changed files too
+       ab = "!f() { git tag -a archive/$1 origin/$1 && git push origin :$1 && git push origin archive/$1 && git branch -D $1; }; f"
+[filter "media"]
+       required = true
+       clean = git media clean %f
+       smudge = git media smudge %f
+[filter "hawser"]
+       clean = git hawser clean %f
+       smudge = git hawser smudge %f
+       required = true
+[fetch]
+       prune = true
+[filter "lfs"]
+       clean = git lfs clean %f
+       smudge = git lfs smudge %f
+       required = true
+[core]
+    editor = nano
+    excludesfile = /Users/t.loevenich/.gitignore_global
+    autocrlf = input
