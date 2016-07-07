@@ -47,6 +47,7 @@ alias zshrc="subl ~/.dotfiles/zshrc"
 alias freshrc="subl ~/.dotfiles/freshrc"
 alias known_hosts="subl ~/.ssh/known_hosts"
 alias ssh_config="subl ~/.ssh/config"
+alias sourcetree="open -a SourceTree ."
 
 # Easier navigation: .., ..., ...., ....., ~ and -
 alias ~="cd ~" # `cd` is probably faster to type though
