@@ -18,10 +18,11 @@ alias docker_boot='/Applications/Docker/Docker\ Quickstart\ Terminal.app/Content
 alias docker_env='eval $(docker-machine env default)'
 alias docker_stop_all='docker stop $(docker ps -a -q)'
 alias docker_remove_all='docker stop $(docker ps -a -q)'
+alias docker_bash='docker exec -it $(docker ps -q) /bin/bash'
 alias docker_clean='docker_stop_all && docker_remove_all && docker rm `docker ps -aq --no-trunc --filter "status=exited"` && docker rmi `docker images --filter 'dangling=true' -q --no-trunc`'
 alias docker_debian_latest='docker run -it --rm=true debian bash'
 alias docker_ubuntu_latest='docker run -it --rm=true ubuntu bash'
-alias docker_mailcatcher_latest='echo "starting mailcatcher with port 1080 and 1025" && docker run -d -p 1080:80 -p 1025:25 --name mail tophfr/mailcatcher'
+alias docker_mailcatcher_latest='echo "stopping existent machine" && docker stop $(docker ps -a -f name=mail -q) && echo "removing previos machine" && docker rm $(docker ps -a -f name=mail -q) && echo "starting mailcatcher with port 1080 and 1025" && docker run -d -p 1080:80 -p 1025:25 --name mail tophfr/mailcatcher'
 
 # Allows you to use docker-compose-exec {service} {command} to run a command on the service
 docker_compose_exec() {
@@ -37,7 +38,7 @@ alias killaudio="sudo kill -9 `ps ax|grep 'coreaudio[a-z]' |awk '{print $1}'`"
 alias hosts="sudo subl /etc/hosts"
 
 alias rename_files_to_md5="/usr/local/bin/md5sum * | gsed -e 's/\([^ ]*\) \(.*\(\..*\)\)$/mv -v \2 \1\3/e'"
-alias install_roles="ansible-galaxy install -r requirements.yml -p ./roles -i"
+alias ansible_install_roles="ansible-galaxy install -r requirements.yml -p ./roles -i"
 
 # Helper
 alias dotfiles="subl ~/.dotfiles/"
@@ -168,7 +169,8 @@ alias cssh_sa="csshX sa-studio sa-app-01 sa-app-02 sa-app-03 sa-app-04 sa-app-05
 alias cssh_stoffe="csshX stoffe1 stoffe2 stoffe3 stoffe4 stoffe5"
 alias cssh_sa_es="csshX sa-es-01 sa-es-02 sa-es-03"
 alias cssh_eav="csshX eav-1 eav-2 eav-3 eav-4"
+alias cssh_sa_at="csshX sa-at-prod2-studio1 sa-at-prod2-studio2 sa-at-prod2-app1 sa-at-prod2-app2 sa-at-prod2-app3 sa-at-prod2-app4 sa-at-prod2-app5"
 
 
-alias private="rm -f /Users/t.loevenich/.m2 && ln -s /Users/t.loevenich/private/m2 /Users/t.loevenich/.m2 && rm -f ~/.gitconfig && ln -s /Users/t.loevenich/.fresh/private/gitconfig /Users/t.loevenich/.gitconfig"
+alias tkl="rm -f /Users/t.loevenich/.m2 && ln -s /Users/t.loevenich/private/m2 /Users/t.loevenich/.m2 && rm -f ~/.gitconfig && ln -s /Users/t.loevenich/.fresh/private/gitconfig /Users/t.loevenich/.gitconfig"
 alias xsite="rm -f /Users/t.loevenich/.m2 && ln -s /Users/t.loevenich/xsite/.m2 /Users/t.loevenich/.m2 && rm -f ~/.gitconfig && ln -s /Users/t.loevenich/.fresh/work/gitconfig /Users/t.loevenich/.gitconfig"

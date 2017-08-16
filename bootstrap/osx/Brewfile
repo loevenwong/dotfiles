@@ -5,8 +5,8 @@ brew 'zsh-syntax-highlighting'
 
 # unix utils
 brew 'binutils'
-brew 'findutils'
-brew 'gnu-sed'
+brew 'findutils --with-default-names'
+brew 'gnu-sed --with-default-names'
 brew 'gnutls'
 brew 'htop-osx'
 brew 'docker'
@@ -16,6 +16,8 @@ brew 'watch'
 brew 'wget'
 brew 'md5sha1sum'
 brew 'gawk'
+brew 'gnu-which --with-default-names'
+brew 'grep --with-default-names'
 
 # ruby
 brew 'rbenv'
@@ -31,6 +33,7 @@ brew 'cmake'
 
 brew 'ansible'
 brew 'maven'
+brew 'sbt'
 
 # bin
 #brew 'node'
@@ -52,8 +55,8 @@ cask 'iterm2'
 # cask 'moom'
 #cask 'omnigraffle'
 cask 'renamer'
-cask 'sequel-pro'
-cask 'skype'
+#cask 'sequel-pro'
+#cask 'skype'
 cask 'slack'
 #cask 'spotify'
 #cask 'sublime-text3'
@@ -66,8 +69,8 @@ cask 'java'
 cask 'Caskroom/cask/postman'
 # tunnelblick
 # vmware-fusion pro
-cask 'caskroom/cask/thunderbird'
-cask 'Caskroom/cask/remote-desktop-manager'
+#cask 'caskroom/cask/thunderbird'
+äcask 'Caskroom/cask/remote-desktop-manager'
 cask 'alfred'
 #cask 'csshx' manual installed...
 cask 'mysql56'

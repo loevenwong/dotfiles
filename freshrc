@@ -41,3 +41,6 @@ fresh ssh/authorized_keys --file=~/.ssh/authorized_keys
 #fresh bin/slideshare-downloader.sh --bin=~/.bin/slide-grab.sh
 #fresh bin/bb7onred.daily.sh --bin=~/.bin/bb7onred.daily.sh
 #fresh bin/bb7onred.today-videos-sync.sh --bin=~/.bin/bb7onred.today-videos-sync.sh
+fresh zsh-users/antigen antigen.zsh --file=~/.antigen.zsh
+fresh shell/aliases.sh
+fresh shell/env.sh
