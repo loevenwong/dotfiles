@@ -25,10 +25,10 @@ $ curl -L http://install.ohmyz.sh | sh
 
 install fresh for dotfiles
 ```shell
-$ git clone https://github.com/lxhunter/dotfiles.git ~/.dotfiles
+$ git clone https://github.com/loevenwong/dotfiles.git ~/.dotfiles
 $ bash -c "`curl -sL get.freshshell.com`"
 $ fresh install
 ```
 
-manualy install:
+manually install:
 - themes: https://github.com/altercation/solarized

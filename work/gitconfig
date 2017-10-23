@@ -1,5 +1,5 @@
 [user]
-    email = t.loevenich@xsite.de
+    email = timo.loevenich@aoe.com
     name = Timo Lövenich
 [push]
        default = simple
@@ -28,5 +28,5 @@
        required = true
 [core]
     editor = nano
-    excludesfile = /Users/t.loevenich/.gitignore_global
+    excludesfile = /Users/timo.loevenich/.gitignore_global
     autocrlf = input
