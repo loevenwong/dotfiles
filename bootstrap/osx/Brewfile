@@ -43,8 +43,8 @@ brew 'sbt'
 
 
 # casks
-brew 'caskroom/cask/brew-cask'
-brew 'brew-cask'
+#brew 'caskroom/cask/brew-cask'
+#brew 'brew-cask'
 
 # apps
 cask 'diffmerge'
