@@ -34,9 +34,9 @@ brew 'coreutils'
 brew 'cmake'
 
 
-brew 'ansible'
-brew 'maven'
-brew 'sbt'
+#brew 'ansible'
+#brew 'maven'
+#brew 'sbt'
 
 # bin
 #brew 'node'
@@ -49,9 +49,9 @@ brew 'sbt'
 # apps
 cask 'diffmerge'
 cask 'google-chrome'
-cask '1password'
+#cask '1password'
 #cask 'istat-menus'
-cask 'iterm2'
+#cask 'iterm2'
 #cask 'little-snitch'
 #cask 'mindnode-pro'
 # install from appstore
@@ -63,13 +63,13 @@ cask 'renamer'
 #cask 'slack'
 #cask 'spotify'
 #cask 'sublime-text3'
-cask 'textwrangler'
-cask 'virtualbox'
+#cask 'textwrangler'
+#cask 'virtualbox'
 #cask 'vagrant'
-cask 'vlc'
+#cask 'vlc'
 cask 'dockertoolbox'
-cask 'java'
-cask 'Caskroom/cask/postman'
+#cask 'java'
+#cask 'Caskroom/cask/postman'
 # tunnelblick
 # vmware-fusion pro
 #cask 'caskroom/cask/thunderbird'

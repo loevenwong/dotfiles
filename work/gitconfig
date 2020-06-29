@@ -28,5 +28,5 @@
        required = true
 [core]
     editor = nano
-    excludesfile = /Users/timo.loevenich/.gitignore_global
+    excludesfile = ~/.gitignore_global
     autocrlf = input

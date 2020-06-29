@@ -171,6 +171,3 @@ alias cssh_sa_es="csshX sa-es-01 sa-es-02 sa-es-03"
 alias cssh_eav="csshX eav-1 eav-2 eav-3 eav-4"
 alias cssh_sa_at="csshX sa-at-prod2-studio1 sa-at-prod2-studio2 sa-at-prod2-app1 sa-at-prod2-app2 sa-at-prod2-app3 sa-at-prod2-app4 sa-at-prod2-app5"
 
-
-alias tkl="rm -f /Users/t.loevenich/.m2 && ln -s /Users/t.loevenich/private/m2 /Users/t.loevenich/.m2 && rm -f ~/.gitconfig && ln -s /Users/t.loevenich/.fresh/private/gitconfig /Users/t.loevenich/.gitconfig"
-alias xsite="rm -f /Users/t.loevenich/.m2 && ln -s /Users/t.loevenich/xsite/.m2 /Users/t.loevenich/.m2 && rm -f ~/.gitconfig && ln -s /Users/t.loevenich/.fresh/work/gitconfig /Users/t.loevenich/.gitconfig"

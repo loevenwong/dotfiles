@@ -5,7 +5,7 @@
 fresh freshshell/fresh bin/fresh --bin=~/.bin/fresh
 
 fresh work --file=~/.fresh/work/
-fresh private --file=~/.fresh/private/
+#fresh private --file=~/.fresh/private/
 fresh zshrc --file
 fresh vimrc --file
 
@@ -22,9 +22,9 @@ fresh tpope/vim-sensible plugin/sensible.vim --file=~/.vim/bundle/plugin/sensibl
 fresh altercation/vim-colors-solarized colors/solarized.vim --file=~/.vim/colors/solarized.vim
 
 # ssh public keys
-fresh ssh/id_rsa.pub --file=~/.ssh/id_rsa.pub
-fresh ssh/t.loevenich.xsite.de.pub --file=~/.ssh/t.loevenich.xsite.de.pub
-fresh ssh/authorized_keys --file=~/.ssh/authorized_keys
+#fresh ssh/id_rsa.pub --file=~/.ssh/id_rsa.pub
+#fresh ssh/t.loevenich.xsite.de.pub --file=~/.ssh/t.loevenich.xsite.de.pub
+#fresh ssh/authorized_keys --file=~/.ssh/authorized_keys
 
 # Sublime 3
 #fresh bootstrap/apps/sublime-3/packages/user/Preferences.sublime-settings --file=~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
