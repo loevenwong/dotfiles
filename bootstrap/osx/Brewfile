@@ -38,6 +38,9 @@ brew 'cmake'
 #brew 'maven'
 #brew 'sbt'
 
+brew 'openjdk'
+
+
 # bin
 #brew 'node'
 
@@ -51,7 +54,7 @@ cask 'diffmerge'
 cask 'google-chrome'
 #cask '1password'
 #cask 'istat-menus'
-#cask 'iterm2'
+cask 'iterm2'
 #cask 'little-snitch'
 #cask 'mindnode-pro'
 # install from appstore
@@ -61,22 +64,22 @@ cask 'renamer'
 #cask 'sequel-pro'
 #cask 'skype'
 #cask 'slack'
-#cask 'spotify'
-#cask 'sublime-text3'
+cask 'spotify'
+cask 'sublime-text'
 #cask 'textwrangler'
 #cask 'virtualbox'
 #cask 'vagrant'
 #cask 'vlc'
-cask 'dockertoolbox'
-#cask 'java'
+cask 'docker-toolbox'
 #cask 'Caskroom/cask/postman'
 # tunnelblick
 # vmware-fusion pro
 #cask 'caskroom/cask/thunderbird'
 #cask 'Caskroom/cask/remote-desktop-manager'
-#cask 'alfred'
+cask 'alfred'
 #cask 'csshx' manual installed...
 #cask 'mysql56'
+cask 'zoomus'
 
 # install quicklook plugins
 cask 'qlcolorcode'
@@ -85,11 +88,11 @@ cask 'qlmarkdown'
 cask 'quicklook-json'
 cask 'qlprettypatch'
 cask 'quicklook-csv'
-cask 'betterzipql'
+#cask 'betterzipql'
 cask 'qlimagesize'
 cask 'webpquicklook'
 cask 'suspicious-package'
 
 # install fonts
-tap 'caskroom/fonts'
-cask 'font-inconsolata-dz-for-powerline'
+#tap 'caskroom/fonts'
+#cask 'font-inconsolata-dz-for-powerline'
