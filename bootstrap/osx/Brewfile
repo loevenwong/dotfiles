@@ -35,21 +35,21 @@ brew 'cmake'
 
 
 #brew 'ansible'
-#brew 'maven'
-#brew 'sbt'
-
+brew 'maven'
+brew 'sbt'
+brew 'node'
 brew 'openjdk'
-
-
-# bin
-#brew 'node'
-
+brew 'switchaudio-osx' # change audio settings from terminals
+brew 'jq'
 
 # casks
 #brew 'caskroom/cask/brew-cask'
 #brew 'brew-cask'
 
-# apps
+cask 'intellij-idea'
+cask 'libreoffice'
+cask 'macdown'
+cask 'postman'
 cask 'diffmerge'
 cask 'google-chrome'
 #cask '1password'
@@ -62,19 +62,29 @@ cask 'iterm2'
 #cask 'omnigraffle'
 cask 'renamer'
 #cask 'sequel-pro'
-#cask 'skype'
+cask 'skype'
+cask 'spectacle'
 #cask 'slack'
 cask 'spotify'
 cask 'sublime-text'
 #cask 'textwrangler'
-#cask 'virtualbox'
+cask 'thunderbird'
+cask 'virtualbox'
 #cask 'vagrant'
 #cask 'vlc'
 cask 'docker-toolbox'
-#cask 'Caskroom/cask/postman'
-# tunnelblick
+cask 'macpass'
+cask 'rambox'
+#cask 'stoplight-studio' # api design first
+cask 'teamviewer'
+cask 'zoom'
+cask 'libreoffice-language-pack'
+cask 'firefox'
+#cask 'cyberduck' # ftp,s3 etc. browser
+#cask 'bloomrpc' # grpc gui client
+#cask 'java'
+cask 'tunnelblick'
 # vmware-fusion pro
-#cask 'caskroom/cask/thunderbird'
 #cask 'Caskroom/cask/remote-desktop-manager'
 cask 'alfred'
 #cask 'csshx' manual installed...

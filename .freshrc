@@ -14,7 +14,7 @@ fresh shell/aliases.sh
 fresh shell/env.sh
 
 # antigen
-fresh zsh-users/antigen antigen.zsh --file=~/.antigen.zsh
+#fresh zsh-users/antigen antigen.zsh --file=~/.antigen.zsh
 
 # vim
 fresh tpope/vim-pathogen autoload/pathogen.vim --file=~/.vim/autoload/pathogen.vim
@@ -27,6 +27,4 @@ fresh altercation/vim-colors-solarized colors/solarized.vim --file=~/.vim/colors
 #fresh ssh/authorized_keys --file=~/.ssh/authorized_keys
 
 
-# binaries
-fresh shell/aliases.sh
-fresh shell/env.sh
+fresh freshshell/fresh bin/fresh \-\-bin\=\~/\.bin/fresh
