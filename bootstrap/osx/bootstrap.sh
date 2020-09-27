@@ -88,6 +88,16 @@ defaults write -g KeyRepeat -int 2
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
+# Disable “natural” (Lion-style) scrolling
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+
+
+### shortcuts
+# disable spotlight 
+/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:64:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+
+
+
 ###############################################################################
 # Screen                                                                      #
 ###############################################################################
@@ -128,6 +138,9 @@ defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
 # Finder: show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Finder: show all files
+defaults write com.apple.finder AppleShowAllFiles -bool TRUE
 
 # Finder: show status bar
 defaults write com.apple.finder ShowStatusBar -bool true
@@ -306,7 +319,7 @@ for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
     killall "${app}" > /dev/null 2>&1
 done
 
-echo "installing brew things"
-brew bundle
+#echo "installing brew things"
+#brew bundle
 
 echo "Done. Note that some of these changes require a logout/restart to take effect."

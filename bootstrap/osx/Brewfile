@@ -41,6 +41,8 @@ brew 'node'
 brew 'openjdk'
 brew 'switchaudio-osx' # change audio settings from terminals
 brew 'jq'
+brew 'colordiff'
+brew 'google-backup-and-sync'
 
 # casks
 #brew 'caskroom/cask/brew-cask'

@@ -27,4 +27,4 @@ fresh altercation/vim-colors-solarized colors/solarized.vim --file=~/.vim/colors
 #fresh ssh/authorized_keys --file=~/.ssh/authorized_keys
 
 
-fresh freshshell/fresh bin/fresh \-\-bin\=\~/\.bin/fresh
+#fresh freshshell/fresh bin/fresh \-\-bin\=\~/\.bin/fresh
