@@ -36,9 +36,10 @@ brew 'cmake'
 
 #brew 'ansible'
 brew 'maven'
-brew 'sbt'
+#brew 'sbt'
 brew 'node'
-brew 'openjdk'
+#brew 'openjdk'
+brew 'sdkman'
 brew 'switchaudio-osx' # change audio settings from terminals
 brew 'jq'
 brew 'colordiff'
@@ -49,7 +50,8 @@ brew 'google-backup-and-sync'
 #brew 'brew-cask'
 
 cask 'intellij-idea'
-cask 'libreoffice'
+#cask 'libreoffice'
+#cask 'libreoffice-language-pack'
 cask 'macdown'
 cask 'postman'
 cask 'diffmerge'
@@ -64,34 +66,40 @@ cask 'iterm2'
 #cask 'omnigraffle'
 cask 'renamer'
 #cask 'sequel-pro'
-cask 'skype'
+#cask 'skype'
 cask 'spectacle'
 #cask 'slack'
 cask 'spotify'
 cask 'sublime-text'
 #cask 'textwrangler'
 cask 'thunderbird'
-cask 'virtualbox'
+#cask 'virtualbox'
 #cask 'vagrant'
 #cask 'vlc'
 cask 'docker-toolbox'
-cask 'macpass'
-cask 'rambox'
+#cask 'macpass'
+# keepassxc
+
+#cask 'rambox'
+#brew 'franz'
+
 #cask 'stoplight-studio' # api design first
-cask 'teamviewer'
-cask 'zoom'
-cask 'libreoffice-language-pack'
+#cask 'teamviewer'
+#cask 'zoom'
+#cask 'zoomus'
+
 cask 'firefox'
 #cask 'cyberduck' # ftp,s3 etc. browser
 #cask 'bloomrpc' # grpc gui client
 #cask 'java'
-cask 'tunnelblick'
+
+#cask 'tunnelblick'
+
 # vmware-fusion pro
 #cask 'Caskroom/cask/remote-desktop-manager'
 cask 'alfred'
 #cask 'csshx' manual installed...
 #cask 'mysql56'
-cask 'zoomus'
 
 # install quicklook plugins
 cask 'qlcolorcode'
