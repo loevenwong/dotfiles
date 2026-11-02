@@ -47,6 +47,8 @@ brew 'colordiff'
 #brew 'caskroom/cask/brew-cask'
 #brew 'brew-cask'
 
+cask 'visual-studio-code'
+
 cask 'intellij-idea'
 #cask 'libreoffice'
 #cask 'libreoffice-language-pack'
