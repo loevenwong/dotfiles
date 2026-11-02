@@ -10,8 +10,8 @@ brew 'findutils'
 #brew 'gnu-sed --with-default-names'
 brew 'gnu-sed'
 brew 'gnutls'
-brew 'htop-osx'
-brew 'docker'
+# brew 'htop-osx'
+# brew 'docker' -> cask/orbstack
 brew 'nmap'
 brew 'unrar'
 brew 'watch'
@@ -38,12 +38,10 @@ brew 'cmake'
 brew 'maven'
 #brew 'sbt'
 brew 'node'
-#brew 'openjdk'
-brew 'sdkman'
-brew 'switchaudio-osx' # change audio settings from terminals
+# brew 'switchaudio-osx' # change audio settings from terminals
 brew 'jq'
 brew 'colordiff'
-brew 'google-backup-and-sync'
+# brew 'google-backup-and-sync'
 
 # casks
 #brew 'caskroom/cask/brew-cask'
@@ -52,10 +50,12 @@ brew 'google-backup-and-sync'
 cask 'intellij-idea'
 #cask 'libreoffice'
 #cask 'libreoffice-language-pack'
-cask 'macdown'
+#cask 'macdown' outdated
 cask 'postman'
-cask 'diffmerge'
+# cask 'diffmerge' outdated
 cask 'google-chrome'
+cask 'orbstack'
+cask "sdkman-cli"
 #cask '1password'
 #cask 'istat-menus'
 cask 'iterm2'
@@ -76,7 +76,7 @@ cask 'thunderbird'
 #cask 'virtualbox'
 #cask 'vagrant'
 #cask 'vlc'
-cask 'docker-toolbox'
+# cask 'docker-toolbox' failed
 #cask 'macpass'
 # keepassxc
 
@@ -105,7 +105,7 @@ cask 'alfred'
 cask 'qlcolorcode'
 cask 'qlstephen'
 cask 'qlmarkdown'
-cask 'quicklook-json'
+# cask 'quicklook-json' outdated
 cask 'qlprettypatch'
 cask 'quicklook-csv'
 #cask 'betterzipql'
