@@ -47,6 +47,8 @@ brew 'colordiff'
 #brew 'caskroom/cask/brew-cask'
 #brew 'brew-cask'
 
+brew 'dbeaver-community'
+
 cask 'visual-studio-code'
 
 cask 'intellij-idea'
